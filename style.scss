@@ -1,0 +1,42 @@
+$colors: (
+  priamry: #45a29e,
+  priamry-light: #66fcf1,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  //px are not good, rem are relative units, 1 rem = 10px, vh or viewport height, vw or viewport width
+}
+.header {
+  background-image: linear-gradiant(
+      to right bottom,
+      rgba(color(primary), o.5),
+      rgba(color(primary-light), o.5)
+    ),
+    url("img/headphones-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.heading-primary-main {
+  //display: block; this is one method to do this
+}
+.heading-primary-sub {
+  //display: block;
+}

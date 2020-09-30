@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradiant() url("img/headphones-bg.jpg");
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */
